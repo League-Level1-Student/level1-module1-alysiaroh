@@ -1,8 +1,8 @@
-
+ 
 
 public class RaceCar {
-	private String brand;
-	private int positionInRace;
+	String brand;
+	int positionInRace;
 	public boolean damaged = false;
 	
 	/**
@@ -20,10 +20,9 @@ public class RaceCar {
 		this.brand = brand;
 		this.positionInRace = positionInRace;
 	}
+ 
 	
-	public int getPositionInRace() {
-		return this.positionInRace;
-	}
+		
 	
 	public String getBrand() {
 		return this.brand;
