@@ -1,4 +1,8 @@
 public class JamesBond {
+public static void main(String[] args) {
+	Vault v = new Vault();
+	
+}
 int findCode(Vault v) {
 	for(int i=0;i<1000000;i++) {
 		boolean a = v.tryCode(i);
@@ -9,8 +13,6 @@ int findCode(Vault v) {
 	}
 	return -1;
 }
-
-
 
 }
 
