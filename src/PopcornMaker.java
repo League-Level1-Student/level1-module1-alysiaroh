@@ -2,14 +2,13 @@ import javax.swing.JOptionPane;
 
 public class PopcornMaker {
 public static void main(String[] args) {
-	String a = JOptionPane.showInputDialog("What would you like the flavor of the popcorn to be?");
-    String b = JOptionPane.showInputDialog("and how long do you want to cook it?");
-    Popcorn p = new Popcorn(a);
+	String popcornFlavor = JOptionPane.showInputDialog("What type of popcorn do you want?");
+	String minutes = JOptionPane.showInputDialog("How long do you want to cook the popcorn?");
+	//converting from string to int
+	Popcorn p = new Popcorn(popcornFlavor);
 	Microwave m = new Microwave();
 	m.putInMicrowave(p);
-	int c = Integer.parseInt(b);
-	m.setTime(c);
+	m.setTime(22222); //< using int from jopt
 	m.startMicrowave();
-	
 }
 }

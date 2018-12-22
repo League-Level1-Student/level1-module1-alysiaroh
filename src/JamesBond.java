@@ -1,19 +1,19 @@
 public class JamesBond {
 public static void main(String[] args) {
-	Vault v = new Vault();
+Vault v = new Vault();
+
 	
-}
-int findCode(Vault v) {
-	for(int i=0;i<1000000;i++) {
-		boolean a = v.tryCode(i);
-		if(a==true) {
-		return i;
-	}
-	
-	}
-	return -1;
 }
 
+public boolean findCode(){
+	for(int i = 0; i<1000000; i++) {
+		if(i==secretCode) {
+			return true;
+		}
+		
+	}
+	return false;
+}
 }
 
 
