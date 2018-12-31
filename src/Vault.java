@@ -1,23 +1,10 @@
-
-public class Vault {
+import java.util.Random;
 
 //James Bond is trying to crack a vault. Before we start to write code, we will draw a UML diagram on the whiteboard (teacher will help) and figure out what the method signatures will be.
 
 //1. We need a Vault object that contains a secret code.
-//It also contains a tryCode() method that takes a number as a parameter and returns true 
-//if that number opens the vault, false otherwise.
-public Vault() {
-	int secretCode;
-}
-public boolean tryCode(int num) {
-	if(num==secretCode) {
-		return true;
-	}
-	else {
-		return false;
-	
-	}
-}
+//It also contains a tryCode() method that takes a number as a parameter and returns true if that number opens the vault, false otherwise.
+
 //2. Test the vault object using a main method.
 
 //3. Make a James Bond class that has a method findCode() that takes a Vault as a parameter.
@@ -26,4 +13,33 @@ public boolean tryCode(int num) {
 //4. Test your code by instantiating the JamesBond and Vault classes.
 
 //5. Add a constructor for Vault so that you can easily set the secret code. 
+public class Vault {
+int secretCode;
+	
+public Vault(){
+	Random r = new Random();
+	secretCode = r.nextInt(1000001);
 }
+boolean tryCode(int num) {
+	if(num==secretCode) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//don'T WorRY aBOuT iT
