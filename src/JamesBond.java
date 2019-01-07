@@ -2,7 +2,8 @@ public class JamesBond {
 public static void main(String[] args) {
 Vault v = new Vault();
 JamesBond j = new JamesBond();
-
+int a = j.findCode(v);
+System.out.println(a);
 }
 int findCode(Vault v) {
 		for(int i=0;i<1000000;i++) {
